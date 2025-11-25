@@ -19,7 +19,30 @@
     </nav>
   </header>
 
-  <main>
+  <div class="page-layout">
+    <aside class="ad-rail" aria-label="Left advertisement">
+      <div class="ad-rail-inner">
+        <p class="eyebrow">Sponsored</p>
+        <h2>Place your Google AdSense unit here</h2>
+        <p class="ad-copy">Paste your AdSense script and ad unit markup inside this rail to keep ads visible as readers browse headlines.</p>
+        <div class="ad-placeholder" aria-label="Google AdSense placeholder">
+          <!-- Example AdSense placement: replace with your own client and slot IDs -->
+          <!--
+          <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-XXXXXX" crossorigin="anonymous"></script>
+          <ins class="adsbygoogle"
+               style="display:block"
+               data-ad-client="ca-pub-XXXXXX"
+               data-ad-slot="1234567890"
+               data-ad-format="auto"
+               data-full-width-responsive="true"></ins>
+          <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+          -->
+          <span class="ad-placeholder-label">Left AdSense rail</span>
+        </div>
+      </div>
+    </aside>
+
+    <main>
     <section class="hero" id="top-stories">
       <div class="hero-text">
         <p class="eyebrow">Breaking now</p>
@@ -38,28 +61,6 @@
         <div class="stat">
           <span class="stat-number" id="category-count">0</span>
           <span class="stat-label">popular categories</span>
-        </div>
-      </div>
-    </section>
-
-    <section class="ad-slot" aria-label="Advertisement" id="ad-slot">
-      <div class="ad-slot-inner">
-        <p class="eyebrow">Sponsored</p>
-        <h2>Place your Google AdSense unit here</h2>
-        <p class="ad-copy">Paste your AdSense script and ad unit markup inside this panel to start serving ads alongside your headlines.</p>
-        <div class="ad-placeholder" aria-label="Google AdSense placeholder">
-          <!-- Example AdSense placement: replace with your own client and slot IDs -->
-          <!--
-          <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-XXXXXX" crossorigin="anonymous"></script>
-          <ins class="adsbygoogle"
-               style="display:block"
-               data-ad-client="ca-pub-XXXXXX"
-               data-ad-slot="1234567890"
-               data-ad-format="auto"
-               data-full-width-responsive="true"></ins>
-          <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
-          -->
-          <span class="ad-placeholder-label">AdSense area</span>
         </div>
       </div>
     </section>
@@ -93,7 +94,30 @@
         <!-- populated in script -->
       </div>
     </section>
-  </main>
+    </main>
+
+    <aside class="ad-rail" aria-label="Right advertisement">
+      <div class="ad-rail-inner">
+        <p class="eyebrow">Sponsored</p>
+        <h2>Place your Google AdSense unit here</h2>
+        <p class="ad-copy">Use this mirrored rail to run a second AdSense unit or a house ad for newsletter signups.</p>
+        <div class="ad-placeholder" aria-label="Google AdSense placeholder">
+          <!-- Example AdSense placement: replace with your own client and slot IDs -->
+          <!--
+          <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-XXXXXX" crossorigin="anonymous"></script>
+          <ins class="adsbygoogle"
+               style="display:block"
+               data-ad-client="ca-pub-XXXXXX"
+               data-ad-slot="1234567890"
+               data-ad-format="auto"
+               data-full-width-responsive="true"></ins>
+          <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+          -->
+          <span class="ad-placeholder-label">Right AdSense rail</span>
+        </div>
+      </div>
+    </aside>
+  </div>
 
   <footer class="site-footer">
     <p>&copy; 2024 The New Hagen News. Updated weekly with the stories that matter.</p>

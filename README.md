@@ -18,7 +18,7 @@ The site uses a brighter neon navy palette defined in `styles/style.css` with to
 
 ## Ad placements
 
-Use the `#ad-slot` panel in `index.html` to embed a Google AdSense unit. Replace the commented sample snippet with your own `data-ad-client` and `data-ad-slot` values to begin serving ads on the page.
+Ads now live in dual side rails that flank the main content. Each rail in `index.html` contains a placeholder AdSense snippet and uses the `.ad-rail` and `.ad-placeholder` styles from `styles/style.css` to keep units visible as visitors scroll. Replace the commented sample snippets on the left and right rails with your own `data-ad-client` and `data-ad-slot` values to begin serving ads on the page.
 
 ## Running tests
 

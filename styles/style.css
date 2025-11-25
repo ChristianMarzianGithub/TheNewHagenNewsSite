@@ -57,10 +57,20 @@ body {
   opacity: 1;
 }
 
-main {
-  max-width: 1100px;
+.page-layout {
+  display: grid;
+  grid-template-columns: minmax(180px, 240px) minmax(0, 1100px) minmax(180px, 240px);
+  gap: 18px;
+  max-width: 1700px;
   margin: 0 auto;
   padding: 32px 20px 80px;
+  align-items: start;
+}
+
+main {
+  max-width: 1100px;
+  width: 100%;
+  margin: 0 auto;
 }
 
 .hero {
@@ -197,16 +207,18 @@ main {
   margin-top: 36px;
 }
 
-.ad-slot {
-  margin-top: 32px;
+.ad-rail {
   border: 1px dashed var(--border);
   border-radius: 16px;
   background: rgba(22, 52, 91, 0.45);
   box-shadow: var(--shadow);
+  position: sticky;
+  top: 110px;
+  align-self: start;
 }
 
-.ad-slot-inner {
-  padding: 20px;
+.ad-rail-inner {
+  padding: 18px;
   display: grid;
   gap: 10px;
 }
@@ -225,7 +237,7 @@ main {
   place-items: center;
   color: var(--accent);
   font-weight: 700;
-  min-height: 120px;
+  min-height: 220px;
 }
 
 .section-heading {
@@ -362,6 +374,26 @@ main {
 
   .hero-stats {
     grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  }
+}
+
+@media (max-width: 1180px) {
+  .page-layout {
+    grid-template-columns: 1fr;
+  }
+
+  main {
+    order: 1;
+  }
+
+  .ad-rail {
+    position: relative;
+    top: auto;
+    order: 2;
+  }
+
+  .ad-rail:last-of-type {
+    order: 3;
   }
 }
 
