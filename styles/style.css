@@ -306,12 +306,39 @@ main {
   margin: 0;
 }
 
+.card .full-text {
+  color: var(--text);
+  margin: 0;
+  display: none;
+  line-height: 1.55;
+}
+
+.card.expanded .full-text {
+  display: block;
+}
+
 .card .meta {
   display: flex;
   align-items: center;
   justify-content: space-between;
   color: var(--muted);
   font-size: 0.9rem;
+}
+
+.read-more {
+  background: transparent;
+  color: #ffffff;
+  border: 1px solid #9ad7ff;
+  border-radius: 10px;
+  padding: 8px 12px;
+  font-weight: 700;
+  cursor: pointer;
+  transition: transform 0.15s ease, border-color 0.15s ease;
+}
+
+.read-more:hover {
+  transform: translateY(-1px);
+  border-color: #c7e8ff;
 }
 
 .card a {

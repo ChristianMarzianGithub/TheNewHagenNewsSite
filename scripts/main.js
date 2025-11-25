@@ -80,11 +80,26 @@ function renderStories() {
       </div>
       <h3>${story.title}</h3>
       <p class="summary">${story.summary}</p>
+      <p class="full-text" hidden>${story.content}</p>
       <div class="meta">
         <span>${formatDate(story.published)}</span>
-        <a href="${story.link}" aria-label="Read more about ${story.title}">Read more</a>
+        <button class="read-more" type="button" aria-label="Read more about ${story.title}" aria-expanded="false">Read more</button>
       </div>
     `;
+
+    const readMoreBtn = card.querySelector('.read-more');
+    const fullText = card.querySelector('.full-text');
+
+    readMoreBtn.addEventListener('click', () => {
+      const expanded = card.classList.toggle('expanded');
+      fullText.hidden = !expanded;
+      readMoreBtn.textContent = expanded ? 'Show less' : 'Read more';
+      readMoreBtn.setAttribute('aria-expanded', expanded.toString());
+      readMoreBtn.setAttribute('aria-label', expanded
+        ? `Collapse story ${story.title}`
+        : `Read more about ${story.title}`);
+    });
+
     storiesContainer.appendChild(card);
   });
 }
