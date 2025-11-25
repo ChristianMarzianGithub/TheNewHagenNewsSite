@@ -1,0 +1,11 @@
+{
+  "name": "thenewhagennewssite",
+  "version": "1.0.0",
+  "description": "Static news landing page with curated stories",
+  "scripts": {
+    "test": "node --test"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "MIT"
+}

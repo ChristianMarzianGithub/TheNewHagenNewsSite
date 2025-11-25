@@ -1,0 +1,104 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>The New Hagen News</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles/style.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="logo">The New Hagen News</div>
+    <nav class="top-nav">
+      <a href="#top-stories">Top Stories</a>
+      <a href="#latest">Latest</a>
+      <a href="#categories">Categories</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero" id="top-stories">
+      <div class="hero-text">
+        <p class="eyebrow">Breaking now</p>
+        <h1>Stay ahead with trusted coverage</h1>
+        <p class="lede">Hand-curated headlines across politics, business, technology, sports, science, and more.</p>
+        <div class="hero-actions">
+          <button class="primary" id="view-latest">View latest</button>
+          <button class="secondary" id="view-trending">Trending topics</button>
+        </div>
+      </div>
+      <div class="hero-stats">
+        <div class="stat">
+          <span class="stat-number" id="story-count">20</span>
+          <span class="stat-label">stories this week</span>
+        </div>
+        <div class="stat">
+          <span class="stat-number" id="category-count">0</span>
+          <span class="stat-label">popular categories</span>
+        </div>
+      </div>
+    </section>
+
+    <section class="ad-slot" aria-label="Advertisement" id="ad-slot">
+      <div class="ad-slot-inner">
+        <p class="eyebrow">Sponsored</p>
+        <h2>Place your Google AdSense unit here</h2>
+        <p class="ad-copy">Paste your AdSense script and ad unit markup inside this panel to start serving ads alongside your headlines.</p>
+        <div class="ad-placeholder" aria-label="Google AdSense placeholder">
+          <!-- Example AdSense placement: replace with your own client and slot IDs -->
+          <!--
+          <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-XXXXXX" crossorigin="anonymous"></script>
+          <ins class="adsbygoogle"
+               style="display:block"
+               data-ad-client="ca-pub-XXXXXX"
+               data-ad-slot="1234567890"
+               data-ad-format="auto"
+               data-full-width-responsive="true"></ins>
+          <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+          -->
+          <span class="ad-placeholder-label">AdSense area</span>
+        </div>
+      </div>
+    </section>
+
+    <section class="pill-bar" id="categories">
+      <div class="pill-bar-heading">
+        <h2>Popular categories</h2>
+        <p>Browse the news by what readers follow the most.</p>
+      </div>
+      <div class="pill-container" id="category-pills">
+        <!-- populated in script -->
+      </div>
+    </section>
+
+    <section class="story-grid" id="latest">
+      <div class="section-heading">
+        <div>
+          <p class="eyebrow">Latest coverage</p>
+          <h2>Fresh stories from the last few weeks</h2>
+        </div>
+        <div class="sort-control">
+          <label for="sort-select">Sort by</label>
+          <select id="sort-select">
+            <option value="newest">Newest first</option>
+            <option value="category">Category</option>
+            <option value="alphabetical">Title A–Z</option>
+          </select>
+        </div>
+      </div>
+      <div class="cards" id="stories">
+        <!-- populated in script -->
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p>&copy; 2024 The New Hagen News. Updated weekly with the stories that matter.</p>
+  </footer>
+
+  <script type="module" src="scripts/main.js"></script>
+</body>
+</html>
