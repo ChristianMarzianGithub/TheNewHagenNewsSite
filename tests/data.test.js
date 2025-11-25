@@ -31,3 +31,11 @@ test('includes recent publication dates', () => {
   });
   assert.ok(allRecent, 'Stories should be from the last month');
 });
+
+test('stories include full content text', () => {
+  stories.forEach((story) => {
+    assert.strictEqual(typeof story.content, 'string', `${story.title} is missing content text`);
+    assert.ok(story.content.trim().length > story.summary.trim().length,
+      `${story.title} should provide full content beyond the summary`);
+  });
+});

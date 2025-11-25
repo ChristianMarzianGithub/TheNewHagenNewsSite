@@ -2,6 +2,7 @@
   "name": "thenewhagennewssite",
   "version": "1.0.0",
   "description": "Static news landing page with curated stories",
+  "type": "module",
   "scripts": {
     "test": "node --test"
   },

@@ -8,7 +8,9 @@ No build step is required. Open `index.html` in a browser or serve the folder lo
 
 ## Data
 
-Story content lives in `data/stories.json`. Each story includes a title, category, publication date, summary, and link placeholder. The homepage loads this JSON to render category pills and story cards.
+Story content lives in `data/stories.json`. Each story includes a title, category, publication date, summary, full `content` text for the in-card "Read more" expansion, and a link placeholder. The homepage loads this JSON to render category pills and story cards.
+
+Visitors can click the **Read more** button on any story card to expand it in place and reveal the complete article copy. The button toggles to **Show less** so readers can collapse the card without leaving the page.
 
 ## Styling and theme
 
@@ -26,4 +28,4 @@ Node's built-in test runner checks the dataset for completeness and freshness.
 npm test
 ```
 
-The suite verifies that at least 20 stories exist, the core categories are covered, and every story falls within the last month relative to 2024-11-25.
+The suite verifies that at least 20 stories exist, the core categories are covered, and every story falls within the last month relative to 2024-11-25. The project uses Node's native ES modules (via `"type": "module"` in `package.json`), so ensure your environment supports Node 18+.
